@@ -1,0 +1,66 @@
+//Fonts
+@font-face {
+    font-family: 'Gotham';
+    src: url('fonts/ghotam/subset-Gotham-Medium.eot');
+    src: url('fonts/ghotam/subset-Gotham-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/ghotam/subset-Gotham-Medium.woff2') format('woff2'),
+        url('fonts/ghotam/subset-Gotham-Medium.woff') format('woff'),
+        url('fonts/ghotam/subset-Gotham-Medium.ttf') format('truetype'),
+        url('fonts/ghotam/subset-Gotham-Medium.svg#Gotham-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('fonts/ghotam/subset-Gotham-Bold.eot');
+    src: url('fonts/ghotam/subset-Gotham-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/ghotam/subset-Gotham-Bold.woff2') format('woff2'),
+        url('fonts/ghotam/subset-Gotham-Bold.woff') format('woff'),
+        url('fonts/ghotam/subset-Gotham-Bold.ttf') format('truetype'),
+        url('fonts/ghotam/subset-Gotham-Bold.svg#Gotham-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('fonts/ghotam/subset-Gotham-Book.eot');
+    src: url('fonts/ghotam/subset-Gotham-Book.eot?#iefix') format('embedded-opentype'),
+        url('fonts/ghotam/subset-Gotham-Book.woff2') format('woff2'),
+        url('fonts/ghotam/subset-Gotham-Book.woff') format('woff'),
+        url('fonts/ghotam/subset-Gotham-Book.ttf') format('truetype'),
+        url('fonts/ghotam/subset-Gotham-Book.svg#Gotham-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	scroll-behavior: smooth;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+}
+
+.clear::after, .clear::before {
+	content: " ";
+	display: table;
+}
+
+.clear::after {
+	clear: both;
+}
+

@@ -1,0 +1,142 @@
+.footer {
+    height: 400px;
+    background: url('../images/bg-footer.jpg') no-repeat;
+    background-size: cover;
+
+
+    &__block {
+        display: flex;
+        width: 100%; 
+        margin-top: 55px;
+    }
+    &__logo {
+        color: #fff;
+        text-decoration: none;
+
+        .icon-logo {
+            font-size: 54px;
+        }
+    }
+    &__social {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__soc {
+        color: #fff;
+        text-decoration: none;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        display: block;
+        text-align: center;
+        line-height: 40px;
+        min-width: 40px;
+        min-height: 40px;
+        transition: all .5s;
+
+        & i {
+            font-size: 16px;
+        }
+
+        &:hover {
+            color: $hover;
+            border: 1px solid $hover;
+            background: #fff;
+            opacity: .3;
+        }
+    }
+
+    &__year {
+        font-family: $gotham;
+        font-size: 14px;
+        color: #fff;
+        margin-top: 45px;
+
+        & span {
+            font-size: 14px;
+
+        }
+    }
+
+
+}
+.map {
+    width: 100%;
+    height: 700px;
+}
+
+.forms {
+
+    background: url('../images/Bg-form.jpg') no-repeat bottom center;
+    background-size: cover;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .5);
+    padding: 0 60px;
+    margin-top: -300px;
+}
+
+.inform {
+    font-size: 18px;
+    margin-bottom: 45px;
+
+    &__icon{
+        color: #7e5aff;
+    }
+    &__text {
+        font-family: $gotham;
+        color: $blue;
+        display: inline-block;
+    }
+    &__link {
+        text-decoration: none;
+        font-family: $gotham;
+        color: $blue;
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    &__input {
+        width: 100%;
+        border-bottom: 1px solid  rgba(75, 85, 98, 0.5);
+        font-family: $gotham;
+        font-size: 18px;
+        padding-bottom: 20px;
+        color: rgba(75, 85, 98, 0.5);
+        margin-bottom: 40px;
+
+        &:focus {
+            color: $blue;
+            border-color: $blue;
+        }
+
+    }
+    &__button {
+        border: solid 1px $blue;
+        text-decoration: none;
+        font-family: $gotham;
+        font-size: 14px;
+        color: $blue;
+        text-transform: uppercase;
+        width: 190px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        display: block;
+        cursor: pointer;
+        margin-bottom: 80px;
+        transition: all .5s;
+        background: none;
+    
+        &:hover {
+            border: 1px solid #fff;
+            color: #fff;
+            background-color: $blue;
+            bottom: 5%;
+        }
+    
+    }
+}

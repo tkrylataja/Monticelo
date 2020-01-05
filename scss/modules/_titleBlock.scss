@@ -1,0 +1,36 @@
+.titleBlock {
+    position: relative;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    color: $blue;
+    font-family: Gotham;
+    font-size: 44px;
+    font-weight: bold;
+    margin-top: 140px;
+
+
+
+    &::before {
+        content:'';
+        position: absolute;
+        top: -40px;
+        left: 50%;
+        transform: translateX(-50%);        
+        width: 100px;
+        height: 1px;
+        background: $blue;
+    }
+}
+.titleBlock--white{
+    color: #fff;
+    &::before{
+        background: #fff;
+    }
+}
+
+.titleBlock--footer {
+    margin-top: 90px;
+    margin-bottom: 60px;
+}

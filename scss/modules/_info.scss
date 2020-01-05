@@ -1,0 +1,103 @@
+.info {
+
+    &__row{
+        margin-top: 150px;
+    }
+
+    &__photo {
+        & img {
+            width: 100%;
+            position: relative;
+        }
+        &::before {
+            content: '';
+            background: #55b7ff;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            bottom: 15%;
+            right: 45%;
+        }
+        
+    }
+
+    &__photo--revers{
+        &::before {
+            content: '';
+            background: #7e5aff;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            bottom: 15%;
+            left: 45%;
+        }
+    }
+
+    &__text  {
+        text-align: left;
+        color: $blue;
+        font-family: $gotham;
+    }
+
+    &__titlText {
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
+
+    &__title{
+        font-size: 44px;
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+
+    &__art {
+        font-family: $OpenSans;
+        font-size: 18px;
+        color: #4b5562;
+        margin-bottom: 40px;
+    }
+
+    &__btn {
+        border: solid 1px $blue;
+        text-decoration: none;
+        font-family: $gotham;
+        font-size: 14px;
+        color: $blue;
+        text-transform: uppercase;
+        width: 190px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        display: block;
+        cursor: pointer;
+        margin-bottom: 60px;
+        transition: all .5s;
+
+
+        &:hover {
+            border: 1px solid #fff;
+            color: #fff;
+            background-color: $blue;
+            bottom: 5%;
+        }
+    }
+
+    &__nav {
+        font-family: $OpenSans;
+        font-size: 18px;
+        font-style: italic;
+        display: flex;
+        & i {
+            font-size: 18px;
+            margin-right: 10px;
+        }
+    }
+
+    &__upend {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 160px;
+        margin-bottom: 140px;
+    }
+
+}
