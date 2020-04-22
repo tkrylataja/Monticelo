@@ -2,18 +2,21 @@
     background: url('../images/bg-news.jpg') no-repeat top center;
     background-size: cover;
     padding-bottom: 140px;
+    @media (max-width: $mobile) {
+        padding-bottom: 40px;
+    }
 
 }
 
 .slider {
     margin-top: 100px;
     width: 100%;
+    @media (max-width: $mobile) {
+        margin-top: 40px;
+    }
 
     &__item {
         margin: 0 15px;
-       // width: 300px;
-        //height: 500px;
-
         background: #fff;
         position: relative;
         margin-bottom: 60px;
@@ -22,7 +25,6 @@
     }
 
     &__photo {
-        //width: 300px;
         height: 240px;
         background: url('../images/news/1.jpg');
         background-size: cover;

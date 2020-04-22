@@ -9,8 +9,11 @@
     font-size: 44px;
     font-weight: bold;
     margin-top: 140px;
+    text-align: center;
 
-
+	@media (max-width: $mobile) {
+        margin-top: 80px;
+	}
 
     &::before {
         content:'';
@@ -21,6 +24,9 @@
         width: 100px;
         height: 1px;
         background: $blue;
+        @media (max-width: $mobile) {
+            top: -30px;
+        }
     }
 }
 .titleBlock--white{

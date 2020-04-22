@@ -227,7 +227,24 @@ function initMap() {
 		$('.slider').slick({
 			slidesToShow: 3,
 			slidesToScroll: 1,
-			dots: true
+			dots: true,
+			responsive: [
+				{
+					breakpoint: 1100,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 1
+					}
+				},
+				{
+					breakpoint: 680,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}
+			]
+
 		});
 
 		//Scrol function

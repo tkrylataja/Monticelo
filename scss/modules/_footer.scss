@@ -52,10 +52,10 @@
         font-size: 14px;
         color: #fff;
         margin-top: 45px;
+        padding-bottom: 20px;
 
         & span {
             font-size: 14px;
-
         }
     }
 
@@ -138,5 +138,31 @@
             bottom: 5%;
         }
     
+    }
+}
+
+@media (max-width: $mobile) {
+    .map {
+        height: 300px;
+    }
+    .footer {
+        height: 100%;
+    }
+    .forms {
+        margin-top: 0;
+    }
+    .form__button {
+        margin-bottom: 40px;
+    }
+    .footer__year {
+        text-align: center;
+    }
+    .footer__social {
+        justify-content: space-around;
+        margin-top: 20px;
+        margin-top: 25px;
+    }
+    .footer__logo {
+        text-align: center;
     }
 }

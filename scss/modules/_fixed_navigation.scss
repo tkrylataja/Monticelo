@@ -4,6 +4,9 @@
 	right: 25px;
 	transform: translateY(-50%);
 	z-index: 9;
+	@media (max-width: $desktop) {
+		display: none;
+	}
 }
 
 .fixed-nav a {
@@ -45,3 +48,4 @@
 	right: 30px;
 	opacity: 1;
 }
+

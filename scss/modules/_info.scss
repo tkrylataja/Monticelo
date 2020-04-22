@@ -2,6 +2,9 @@
 
     &__row{
         margin-top: 150px;
+        @media (max-width: $mobile) {
+            margin-top: 80px;
+        }
     }
 
     &__photo {
@@ -98,6 +101,10 @@
         flex-direction: row-reverse;
         margin-top: 160px;
         margin-bottom: 140px;
+        @media (max-width: $mobile) {
+            margin-top: 80px;
+            margin-bottom: 40px;
+        }
     }
 
 }
